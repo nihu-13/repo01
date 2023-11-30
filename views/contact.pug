@@ -1,0 +1,80 @@
+doctype html
+head
+  title iEducate - Transforming Online Education
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='../static/css/contact.css')
+  title iEducate - Transforming Online Education
+section.ftco-section.img.bg-hero(style='background-image: url(../static/img/bg_1.jpg);')
+  .container
+    .row.justify-content-center
+      .col-md-6.text-center.mb-5
+        h2.heading-section Hii How Are You ...
+    .row.justify-content-center
+      .col-lg-11
+        .wrapper
+          .row.no-gutters.justify-content-between
+            .col-lg-6.d-flex.align-items-stretch
+              .info-wrap.w-100.p-5
+                h3.mb-4 Contact us
+                .dbox.w-100.d-flex.align-items-start
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-map-marker
+                  .text.pl-4
+                    p
+                      span Address:
+                      |  198 West 21th Street, Suite 721 New York NY 10016
+                .dbox.w-100.d-flex.align-items-start
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-phone
+                  .text.pl-4
+                    p
+                      span Phone:
+                      a(href='tel://1234567920') + 1235 2355 98
+                .dbox.w-100.d-flex.align-items-start
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-paper-plane
+                  .text.pl-4
+                    p
+                      span Email:
+                      a(href='mailto:info@yoursite.com') info@yoursite.com
+                .dbox.w-100.d-flex.align-items-start
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-globe
+                  .text.pl-4
+                    p
+                      span Website
+                      a(href='iEducate - Transforming Online Education.com') yoursite.com
+            .col-lg-5
+              .contact-wrap.w-100.p-md-5.p-4
+                h3.mb-4 Get in touch
+                #form-message-warning.mb-4
+                #form-message-success.mb-4
+                  | Your message was sent, thank you!
+                  
+                form#contactForm(action='/contact'  method='post' name='contactForm' onsubmit="return validateForm()")
+                  .row
+                    .col-md-12
+                      .form-group
+                        input#name.form-control(type='text' name='name' placeholder='Name' required)
+                    .col-md-12
+                      .form-group
+                        input#email.form-control(type='email' name='email' placeholder='Email' required)
+                    .col-md-12
+                      .form-group
+                        input#subject.form-control(type="tel" class="phone" name="phone" size="10" placeholder='Conact number' required)
+                        span( id="phone-error" style="color: red;")
+                    .col-md-12
+                      .form-group
+                        textarea#message.form-control(name='message' cols='30' rows='5' placeholder='Message' required)
+                    .col-md-12
+                      .form-group
+                        input.btn.btn-primary(type='submit' value='Send Message')
+                        .submitting
+script(src='../static/js/jquery.min.js')
+script(src='../static/js/popper.js')
+script(src='../static/js/bootstrap.min.js')
+script(src='../static/js/jquery.validate.min.js')
+script(src='../static/js/main.js')

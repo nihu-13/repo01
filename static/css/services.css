@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bg-1{
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgb(92, 92, 224);
+    position: absolute;
+    top: 0;
+}
+.bg-2{
+    width: 100%;
+    min-height: 70vh;
+}
+.cards-container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3 ,auto);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    padding: 30px;
+}
+.top-heading{
+    position: absolute;
+    top: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top-heading h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+.top-heading p{
+    font-size: 30px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.178);  
+    transition: .1s all ease; 
+}
+.cards:hover{
+    box-shadow: 35px 35px 35px rgba(0, 0, 0, 0.178);
+}
+.las{
+    font-size: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(92, 92, 224);
+    border: 2px solid transparent;
+    color: white;
+}
+.heading{
+    font-size: 30px;
+    padding: 5px 0px;
+}
+.text{
+    font-size: 20px;
+}
+@media screen and (max-width: 1400px) {
+    .cards-container{
+        
+        grid-template-columns: repeat(2 ,auto);
+        grid-gap: 0px;
+        padding: 30px;
+        top: 100px;
+    }
+}
+@media screen and (max-width: 748px) {
+    .cards{
+        padding: 20px;
+    }
+    .cards-container{
+        grid-template-columns: repeat(1 ,auto);
+    }
+    .cards .heading{
+        font-size: 23px;
+        font-weight: 900;
+    }
+}
+
